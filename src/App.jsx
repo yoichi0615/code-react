@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Reducer } from "./components/hooks/Reducer"
 import { ColorfulMessage } from "./components/ColorfulMessage";
 
 const App = () => {
@@ -36,6 +37,8 @@ const App = () => {
       <button onClick={switchFaceShowFlg}>on/off</button>
       <p>{num}</p>
       {faceShowFlag && <p>🙄</p>}
+      <div>--------------<b>Reducer</b>-------------</div>
+      <Reducer />
     </>
   );
 }
