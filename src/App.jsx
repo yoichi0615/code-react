@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Reducer } from "./components/hooks/Reducer"
+import { Reducer } from "./components/hooks/useReducer/Reducer"
+import { Parent } from "./components/hooks/useContext/Parent"
 import { ColorfulMessage } from "./components/ColorfulMessage";
 
 const App = () => {
@@ -39,6 +40,8 @@ const App = () => {
       {faceShowFlag && <p>🙄</p>}
       <div>--------------<b>Reducer</b>-------------</div>
       <Reducer />
+      <div>--------------<b>Context</b>-------------</div>
+      <Parent />
     </>
   );
 }
