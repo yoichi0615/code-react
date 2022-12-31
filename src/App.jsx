@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Reducer } from "./components/hooks/useReducer/Reducer"
 import { Parent } from "./components/hooks/useContext/Parent"
+import { UseEffect } from "./components/hooks/useEffect/UseEffect";
 import { ColorfulMessage } from "./components/ColorfulMessage";
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
       <Reducer />
       <div>--------------<b>Context</b>-------------</div>
       <Parent />
+      <UseEffect />
     </>
   );
 }
